@@ -1,0 +1,14 @@
+# Large capture/source material — kept locally, never published
+_capture/
+wp-content.zip
+
+# Internal project docs — kept local, not published to the public repo
+CLAUDE.md
+CROSS-SESSION-PROTOCOL.md
+
+# Editor / OS / harness
+.claude/
+.DS_Store
+Thumbs.db
+node_modules/
+*.log
