@@ -238,7 +238,9 @@
       <div class="contact-form">
         <p class="eyebrow">Contact With Us</p>
         <h2>Write A Message</h2>
-        <form onsubmit="event.preventDefault(); alert('Thank you — your message form will be connected to email on the live site.');">
+        <form id="contactForm">
+          <input type="hidden" name="_subject" value="New inquiry from the GIC website" />
+          <input type="hidden" name="_template" value="table" />
           <div class="form-grid">
             <input type="text" name="name" placeholder="Enter Name" required />
             <input type="tel" name="phone" placeholder="Phone Number" />
@@ -254,6 +256,7 @@
             <textarea class="form-full" name="message" placeholder="Your message"></textarea>
           </div>
           <button class="btn" type="submit">Send Message</button>
+          <p class="form-status" hidden></p>
         </form>
       </div>
     </div>
@@ -301,5 +304,6 @@
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
 </body>
 </html>
