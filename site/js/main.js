@@ -1,6 +1,36 @@
 /* Glynloen Insurance Consulting — contact form handling
    Uses FormSubmit (https://formsubmit.co) so the static site can email
    submissions to info@glynloen.com with no backend. */
+/* Stat counters — animate 0 → target when scrolled into view.
+   Markup carries the final value ("66+") as a no-JS fallback. */
+(function () {
+  var nums = document.querySelectorAll('.stat .num[data-count]');
+  if (!nums.length || !('IntersectionObserver' in window)) return;
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      var el = entry.target;
+      observer.unobserve(el);
+      var target = parseInt(el.dataset.count, 10);
+      var duration = 1400;
+      var start = null;
+      function tick(ts) {
+        if (!start) start = ts;
+        var p = Math.min((ts - start) / duration, 1);
+        // ease-out cubic
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(eased * target) + '+';
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      el.textContent = '0+';
+      requestAnimationFrame(tick);
+    });
+  }, { threshold: 0.4 });
+
+  nums.forEach(function (el) { observer.observe(el); });
+})();
+
 (function () {
   var form = document.getElementById('contactForm');
   if (!form) return;
