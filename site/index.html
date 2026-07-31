@@ -16,303 +16,250 @@
   <link rel="icon" href="assets/favicon.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/v2.css?v=3" />
 </head>
 <body>
 
-  <!-- ============ TOP BAR ============ -->
-  <div class="topbar">
-    <div class="container">
-      <a class="brand" href="index.html">
-        <img src="assets/logo.png" alt="Glynloen Insurance Consulting logo" />
-        <span class="brand-name">GLYNLOEN<span>INSURANCE CONSULTING</span></span>
-      </a>
-      <div class="topbar-info">
-        <div class="item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <a href="tel:+16309405319">(630) 940-5319</a>
-        </div>
-        <div class="item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
-          <a href="mailto:info@glynloen.com">info@glynloen.com</a>
-        </div>
-        <div class="item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <small>1699 Upper Tug Fork Road<br />Alexandria, KY 41001</small>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- ============ NAV ============ -->
-  <nav class="navbar">
-    <div class="container">
-      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navlinks">
-        <li><a class="active" href="index.html">Home</a></li>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="nav-brand" href="index.html">
+        <img src="assets/lion-white.png" alt="GIC lion logo" />
+        <span class="word">GLYNLOEN<small>Insurance Consulting</small></span>
+      </a>
+      <button class="nav-burger" aria-label="Menu" onclick="document.getElementById('nl').classList.toggle('open')"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nl">
+        <li><a class="on" href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="expert-witness.html">Expert Witness Services</a></li>
-        <li><a href="services.html">Other Services</a></li>
+        <li><a href="expert-witness.html">Expert Witness</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
         <li><a href="team.html">Our Team</a></li>
         <li><a href="announcements.html">Announcements</a></li>
-        <li class="nav-cta"><a class="btn" href="contact.html">Contact Us</a></li>
+        <li class="nav-cta"><a class="pill pill--solid" href="contact.html">Contact Us</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- ============ HERO ============ -->
-  <section class="hero">
-    <video class="hero-video" autoplay muted loop playsinline poster="assets/hero.jpg">
+  <header class="hero">
+    <video autoplay muted loop playsinline poster="assets/hero.jpg">
       <source src="assets/hero-video.mp4" type="video/mp4" />
     </video>
-    <div class="container">
-      <p class="eyebrow">Insurance Industry Expertise</p>
-      <h1>Committed Professionals.<br />Intensely Focused.</h1>
-      <p class="lead">On every assignment, the team at Glynloen Insurance Consulting uses decades of in-depth insurance industry experience to deliver the results your project deserves.</p>
-      <div class="hero-actions">
-        <a class="btn" href="contact.html">Get in Touch</a>
-        <a class="btn btn--outline on-dark" href="expert-witness.html">Expert Witness Services</a>
+    <div class="inner">
+      <div class="kicker">Glynloen Insurance Consulting</div>
+      <h1>Helping Clients Review,<br />Analyze and Prevail</h1>
+      <p class="sub">Deep insurance expertise. Objective analysis. Reports and testimony that stand up in court.</p>
+      <div class="actions">
+        <a class="pill pill--solid" href="contact.html">Let's work together</a>
+        <a class="pill pill--ghost" href="expert-witness.html">Expert Witness Services</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ STATEMENT ============ -->
+  <section class="sec" id="about">
+    <div class="wrap statement rv">
+      <p>On every assignment, GIC uses <strong>decades of in-depth insurance industry experience</strong> to deliver the results your project deserves — by digging deeper and <strong>out-working, out-producing, and out-shining</strong> other experts in the field.</p>
+      <hr class="rule rule--center" />
+    </div>
+  </section>
+
+  <!-- ============ FEATURE CARDS ============ -->
+  <section class="sec sec--mist" id="expert" style="padding-top:80px;">
+    <div class="wrap">
+      <div class="sol-head rv">
+        <div>
+          <h2>Built for the courtroom</h2>
+          <hr class="rule" />
+        </div>
+        <p style="max-width:420px; margin:0;">Subject-matter expert witness services are the core of GIC's practice — accepted in state and federal jurisdictions.</p>
+      </div>
+      <div class="cards">
+        <a class="card rv" href="expert-witness.html">
+          <img class="bg" src="assets/bg-gavel.jpg" alt="" />
+          <div class="body">
+            <div class="tag">The GIC Process</div>
+            <h3>Review the Litigation</h3>
+            <div class="go">How we work →</div>
+          </div>
+        </a>
+        <a class="card rv" href="expert-witness.html" style="transition-delay:.1s;">
+          <img class="bg" src="assets/hero.jpg" alt="" />
+          <div class="body">
+            <div class="tag">The GIC Process</div>
+            <h3>Analyze the Record</h3>
+            <div class="go">How we work →</div>
+          </div>
+        </a>
+        <a class="card rv" href="expert-witness.html" style="transition-delay:.2s;">
+          <img class="bg" src="assets/bg-handshake.jpg" alt="" />
+          <div class="body">
+            <div class="tag">The GIC Process</div>
+            <h3>Present the Findings</h3>
+            <div class="go">How we work →</div>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ============ WHY CHOOSE GIC ============ -->
-  <section class="section section--charcoal">
-    <div class="container split">
-      <div class="content">
-        <p class="eyebrow">Insurance Industry Expertise</p>
-        <h2>Why Choose GIC</h2>
-        <p>Whether you are litigating a big case, addressing a significant business challenge, or need some quick insight on a new operational initiative, the professionals at GIC are here to help you and your team achieve your objectives in the most effective and efficient way possible.</p>
-        <p>GIC consistently out-works, out-produces, and out-shines other experts in the field.</p>
-        <a class="btn" href="about.html">More About Us</a>
-      </div>
-      <div class="media">
-        <img src="assets/hero.jpg" alt="The GIC team at work" />
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ GIC PROCESS ============ -->
-  <section class="section section--charcoal" style="background:#363b41;">
-    <div class="container split reverse">
-      <div class="media">
-        <img src="assets/bg-gavel.jpg" alt="Litigation documents and gavel" />
-      </div>
-      <div class="content">
-        <p class="eyebrow">Expert Witness Services</p>
-        <h2>The GIC Process</h2>
-        <p>At Glynloen Insurance Consulting (GIC) we take pride in digging deeper and providing more comprehensive analysis than other experts in the industry. On every assignment, GIC strives to provide the Court with the results of a thorough investigation into the insurance-related issues at the center of the litigation.</p>
-        <div class="steps">
-          <div class="step">
-            <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
-            <div><h3>Review the Litigation</h3><p>First, GIC reviews the pleadings to identify the key allegations in the litigation, so as to focus the analysis on examining those matters.</p></div>
-          </div>
-          <div class="step">
-            <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-5"/></svg></div>
-            <div><h3>Analyze the Record</h3><p>Next, GIC conducts an exhaustive review of the record to render preliminary opinions and focus additional analysis and research.</p></div>
-          </div>
-          <div class="step">
-            <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
-            <div><h3>Present the Findings</h3><p>Finally, Rick and the GIC team synthesize the findings into a report with detailed citations and demonstratives, communicated effectively to the Court.</p></div>
-          </div>
+  <!-- ============ SOLUTIONS ============ -->
+  <section class="sec" id="solutions">
+    <div class="wrap">
+      <div class="sol-head rv">
+        <div>
+          <h2>What we do</h2>
+          <hr class="rule" />
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ OTHER SERVICES ============ -->
-  <section class="section section--black">
-    <div class="container">
-      <div class="section-head">
-        <h2>Other Services</h2>
-        <p>Whether you are litigating a big case, addressing a significant business challenge, or need quick insight on a new operational initiative, the professionals at GIC are here to help you achieve your objectives in the most effective and efficient way possible.</p>
-      </div>
-      <div class="cards-3">
-        <div class="svc">
-          <div class="icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></div>
-          <h3>Claims Review and Analysis</h3>
-          <p>GIC has completed numerous engagements involving the adjudication of claims against insolvent insurers, and excels at claims reserve studies involving auto insurers, environmental claims, and more.</p>
-          <a class="btn btn--outline" href="services.html#claims">Read More</a>
+      <div class="sol-grid">
+        <div class="sol rv">
+          <h3>Expert Witness Services</h3>
+          <p>Credentials accepted in state and federal jurisdictions. Thorough, well-cited reports — and testimony delivered with conviction at deposition and trial.</p>
+          <a href="expert-witness.html">Learn more <span>→</span></a>
         </div>
-        <div class="svc">
-          <div class="icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17h14M5 17a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2M7 21h10"/><circle cx="8" cy="13" r="1"/><circle cx="16" cy="13" r="1"/></svg></div>
+        <div class="sol rv">
+          <h3>Claims Review &amp; Analysis</h3>
+          <p>Claim reserve studies, claims adjudication projects and reinsurance cession allocation, built on careers at three of the largest U.S. carriers.</p>
+          <a href="solutions.html#claims">Learn more <span>→</span></a>
+        </div>
+        <div class="sol rv">
           <h3>Business Interruption Services</h3>
-          <p>The insurance industry is facing an overwhelming crisis which will require the skill and proven problem-solving capabilities of experts possessing hands-on, technical know-how.</p>
-          <a class="btn btn--outline" href="services.html#business-interruption">Read More</a>
+          <p>Hands-on, technical know-how for unprecedented claims — from international terrorism losses to complex restoration timelines.</p>
+          <a href="solutions.html#business-interruption">Learn more <span>→</span></a>
         </div>
-        <div class="svc">
-          <div class="icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01"/></svg></div>
+        <div class="sol rv">
           <h3>Regulatory Consulting</h3>
-          <p>GIC can evaluate your current policies and practices by providing regulatory assessment services to identify issues before they become a problem. Need defense from regulatory overreach? We do that too!</p>
-          <a class="btn btn--outline" href="services.html#regulatory">Read More</a>
+          <p>Market conduct examinations, mock exams, corrective action plans — from the team that has worked both sides of the regulator's desk.</p>
+          <a href="solutions.html#regulatory">Learn more <span>→</span></a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ STATS ============ -->
-  <section class="stats">
-    <div class="container stats-grid">
-      <div class="stat"><div class="num" data-count="66">66+</div><div class="label">Engagements as a consultant</div></div>
-      <div class="stat"><div class="num" data-count="13">13+</div><div class="label">Years of experience working in insurance companies</div></div>
-      <div class="stat"><div class="num" data-count="26">26+</div><div class="label">Years in the insurance industry</div></div>
-    </div>
-  </section>
-
-  <!-- ============ TEAM ============ -->
-  <section class="section section--black">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Insurance Industry Expertise</p>
-        <h2>Meet Our Team</h2>
-        <p>We are a small but mighty team of experienced insurance professionals with a wide range of skills and experience. We love what we do, and we do it with passion. We look forward to deploying our talents on your behalf and helping you conquer your business challenges.</p>
+  <section class="sec sec--navy stats" id="team">
+    <div class="wrap">
+      <div class="rv">
+        <h2>A small but mighty team</h2>
+        <hr class="rule rule--center" />
       </div>
-      <div class="team-grid" style="grid-template-columns:repeat(2,1fr); max-width:760px; margin:0 auto;">
-        <div class="member">
-          <img class="photo" src="assets/team-rick.jpg" alt="Rick Bingham" />
-          <h3>Rick Bingham</h3>
-          <div class="role">Insurance Expert and GIC Principal</div>
-          <a href="team.html">View profile →</a>
-        </div>
-        <div class="member">
-          <img class="photo" src="assets/team-dan.jpg" alt="Dan Weber" />
-          <h3>Dan Weber</h3>
-          <div class="role">Insurance Regulatory Attorney &amp; Case Mapping Specialist</div>
-          <a href="team.html">View profile →</a>
-        </div>
-      </div>
-      <p style="text-align:center; margin-top:36px;"><a class="btn btn--outline" style="color:#fff;" href="team.html">Meet the Full Team</a></p>
-    </div>
-  </section>
-
-  <!-- ============ TESTIMONIALS ============ -->
-  <section class="section section--black" style="background:#0f0f0f;">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">What Clients Say</p>
-        <h2>Satisfied Clients</h2>
-        <p>We help our clients achieve the results they need, which has them coming back to Glynloen Insurance Consulting when they find themselves in need of insurance expertise.</p>
-      </div>
-      <div class="t-grid">
-        <div class="t-card">
-          <div class="stars">★★★★★</div>
-          <p class="quote">“Glynloen brings a unique blend of insurance experience and subject-matter expertise to both internal investigations and litigation consulting. From comprehensive data gathering to best-in-class analytics, Glynloen is able to assemble creditable and dependable reports that ably support both corrective action plans to regulators, and expert testimony in court. As a 42-year lawyer and insurance industry veteran, I find Glynloen to be a trusted and indispensable resource.”</p>
-          <div class="person">
-            <img src="assets/testimonial-whittle.png" alt="Jay Whittle" />
-            <span><strong>Jay Whittle</strong><small>Insurance Attorney</small></span>
-          </div>
-        </div>
-        <div class="t-card">
-          <div class="stars">★★★★★</div>
-          <p class="quote">“I have worked with Rick Bingham in many capacities over the course of 30 years, including as a consultant, client officer, adverse witness, and expert witness for clients. His insurance industry knowledge and vast governmental service and private industry experience are unparalleled. His written expert witness reports are detailed, focused, and written persuasively in plain English. Rick is front of mind when I need an insurance expert.”</p>
-          <div class="person">
-            <img src="assets/testimonial-schwab.png" alt="Stephen Schwab" />
-            <span><strong>Stephen Schwab</strong><small>Partner, DLA Piper LLP</small></span>
-          </div>
-        </div>
-        <div class="t-card">
-          <div class="stars">★★★★★</div>
-          <p class="quote">“In my experience, few people have the breadth of knowledge of insurance that Rick Bingham possesses. He has worked in almost every capacity in the industry and understands both the regulatory and business aspects of the business. Along with the insurance expertise, Rick has a unique ability to lead and manage teams, which has helped my firm navigate large and complex projects to a successful conclusion.”</p>
-          <div class="person">
-            <img src="assets/testimonial-wagner.png" alt="Matt Wagner" />
-            <span><strong>Matt Wagner</strong><small>Attorney</small></span>
-          </div>
-        </div>
+      <div class="stats-grid">
+        <div class="stat rv"><div class="n"><span data-n="66">66</span><b>+</b></div><div class="l">Engagements as a consultant</div></div>
+        <div class="stat rv" style="transition-delay:.1s;"><div class="n"><span data-n="13">13</span><b>+</b></div><div class="l">Years working in insurance companies</div></div>
+        <div class="stat rv" style="transition-delay:.2s;"><div class="n"><span data-n="26">26</span><b>+</b></div><div class="l">Years in the insurance industry</div></div>
       </div>
     </div>
   </section>
 
-  <!-- ============ CLIENTS ============ -->
-  <section class="section--tight section--black clients" style="background:#0f0f0f;">
-    <div class="container" style="text-align:center;">
-      <div class="client-logos">
-        <div class="logo-card"><img src="assets/client-cia.png" alt="Commercial Insurance Associates" /></div>
-        <div class="logo-card"><img src="assets/client-dlapiper.jpg" alt="DLA Piper" /></div>
-        <div class="logo-card"><img src="assets/client-fbt.png" alt="Frost Brown Todd" /></div>
-        <div class="logo-card"><img src="assets/client-hsb.png" alt="Haynsworth Sinkler Boyd" /></div>
+  <!-- ============ QUOTES ============ -->
+  <section class="sec">
+    <div class="wrap quotes rv">
+      <div class="quote-mark">“</div>
+      <div id="qtext" class="q-text">His written expert witness reports are detailed, focused, and written persuasively in plain English. Rick is front of mind when I need an insurance claims, reinsurance, regulatory, or receivership expert.</div>
+      <div id="qwho" class="q-who"><b>Stephen Schwab</b>Partner, DLA Piper LLP</div>
+      <div class="q-dots">
+        <button class="on" aria-label="Quote 1" onclick="setQ(0)"></button>
+        <button aria-label="Quote 2" onclick="setQ(1)"></button>
+        <button aria-label="Quote 3" onclick="setQ(2)"></button>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="section--blue">
-    <div class="container contact-split">
-      <div class="media">
-        <img src="assets/hero.jpg" alt="Meeting with the GIC team" />
-      </div>
-      <div class="contact-form">
-        <p class="eyebrow">Contact With Us</p>
-        <h2>Write A Message</h2>
-        <form id="contactForm">
-          <input type="hidden" name="_subject" value="New inquiry from the GIC website" />
-          <input type="hidden" name="_template" value="table" />
-          <div class="form-grid">
-            <input type="text" name="name" placeholder="Enter Name" required />
-            <input type="tel" name="phone" placeholder="Phone Number" />
-            <input type="email" name="email" placeholder="Enter Email" required />
-            <input type="text" name="subject" placeholder="Enter Subject" />
-            <select name="service" class="form-full">
-              <option value="">Select Service</option>
-              <option>Expert Witness Services</option>
-              <option>Claims Review and Analysis</option>
-              <option>Business Interruption Services</option>
-              <option>Regulatory Consulting</option>
-            </select>
-            <textarea class="form-full" name="message" placeholder="Your message"></textarea>
-          </div>
-          <button class="btn" type="submit">Send Message</button>
-          <p class="form-status" hidden></p>
-        </form>
+      <div class="logos">
+        <img src="assets/client-cia.png" alt="Commercial Insurance Associates" />
+        <img src="assets/client-dlapiper.jpg" alt="DLA Piper" />
+        <img src="assets/client-fbt.png" alt="Frost Brown Todd" />
+        <img src="assets/client-hsb.png" alt="Haynsworth Sinkler Boyd" />
       </div>
     </div>
   </section>
 
   <!-- ============ CTA ============ -->
-  <section class="cta-band">
-    <div class="container">
-      <h2>We're here to help.</h2>
-      <p>We are experts in our fields, and it is our mission to deliver the results your project deserves. Let's work together.</p>
-      <a class="btn" href="contact.html">Contact Rick Bingham</a>
+  <section class="sec sec--mist cta" id="contact">
+    <div class="wrap rv">
+      <h2>Let's work together.</h2>
+      <p>Contact Rick Bingham and the GIC team to discuss your litigation, claims, or regulatory challenge.</p>
+      <a class="pill pill--solid" href="mailto:info@glynloen.com">info@glynloen.com</a>&nbsp;&nbsp;
+      <a class="pill pill--navy" href="tel:+16309405319">(630) 940-5319</a>
     </div>
   </section>
 
   <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="assets/logo.png" alt="Glynloen Insurance Consulting" />
+  <footer>
+    <div class="wrap f-grid">
+      <div class="f-brand">
+        <img src="assets/lion-white.png" alt="Glynloen Insurance Consulting" />
         <p>Decades of in-depth insurance industry experience, delivering outstanding value to our clients.</p>
       </div>
       <div>
-        <h4>Services</h4>
+        <h4>Solutions</h4>
         <ul>
           <li><a href="expert-witness.html">Expert Witness Services</a></li>
-          <li><a href="services.html#claims">Claims Review and Analysis</a></li>
-          <li><a href="services.html#business-interruption">Business Interruption Services</a></li>
-          <li><a href="services.html#regulatory">Regulatory Consulting</a></li>
+          <li><a href="solutions.html#claims">Claims Review &amp; Analysis</a></li>
+          <li><a href="solutions.html#business-interruption">Business Interruption</a></li>
+          <li><a href="solutions.html#regulatory">Regulatory Consulting</a></li>
         </ul>
       </div>
       <div>
         <h4>Contact</h4>
         <ul>
-          <li>Glynloen Insurance Consulting</li>
           <li>1699 Upper Tug Fork Road<br />Alexandria, KY 41001</li>
           <li><a href="tel:+16309405319">(630) 940-5319</a></li>
           <li><a href="mailto:info@glynloen.com">info@glynloen.com</a></li>
-          <li>Mon – Sat, 9:00 – 17:00</li>
           <li><a href="https://www.linkedin.com/company/glynloen-insurance-consulting/" target="_blank" rel="noopener">LinkedIn</a></li>
         </ul>
       </div>
     </div>
-    <div class="container footer-bottom">
-      © <span id="year">2026</span> Glynloen Insurance Consulting. All rights reserved.
-    </div>
+    <div class="wrap f-bottom">© <span id="yr">2026</span> Glynloen Insurance Consulting — </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="js/main.js"></script>
+  <a class="connect" href="contact.html">Let's connect</a>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // reveal on scroll
+    var rv = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); rv.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.rv').forEach(function (el) { rv.observe(el); });
+
+    // stat count-up
+    var cu = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        cu.unobserve(e.target);
+        var el = e.target, t = parseInt(el.dataset.n, 10), s = null;
+        function step(ts) {
+          if (!s) s = ts;
+          var p = Math.min((ts - s) / 1400, 1);
+          el.textContent = Math.round((1 - Math.pow(1 - p, 3)) * t);
+          if (p < 1) requestAnimationFrame(step);
+        }
+        el.textContent = '0';
+        requestAnimationFrame(step);
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-n]').forEach(function (el) { cu.observe(el); });
+
+    // rotating quotes
+    var quotes = [
+      { t: 'His written expert witness reports are detailed, focused, and written persuasively in plain English. Rick is front of mind when I need an insurance claims, reinsurance, regulatory, or receivership expert.', w: '<b>Stephen Schwab</b>Partner, DLA Piper LLP' },
+      { t: 'From comprehensive data gathering to best-in-class analytics, Glynloen is able to assemble creditable and dependable reports that ably support both corrective action plans to regulators, and expert testimony in court.', w: '<b>Jay Whittle</b>Insurance Attorney' },
+      { t: 'Few people have the breadth of knowledge of insurance that Rick Bingham possesses. He has worked in almost every capacity in the industry and understands both the regulatory and business aspects of the business.', w: '<b>Matt Wagner</b>Attorney' }
+    ];
+    var qi = 0, qEl = document.getElementById('qtext'), wEl = document.getElementById('qwho'),
+        dots = document.querySelectorAll('.q-dots button');
+    function setQ(i) {
+      qi = i;
+      qEl.style.opacity = 0; wEl.style.opacity = 0;
+      setTimeout(function () {
+        qEl.textContent = quotes[i].t; wEl.innerHTML = quotes[i].w;
+        qEl.style.opacity = 1; wEl.style.opacity = 1;
+      }, 220);
+      dots.forEach(function (d, j) { d.classList.toggle('on', j === i); });
+    }
+    qEl.style.transition = 'opacity .22s'; wEl.style.transition = 'opacity .22s';
+    setInterval(function () { setQ((qi + 1) % quotes.length); }, 8000);
+  </script>
 </body>
 </html>

@@ -23,11 +23,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
-      - name: Assemble site (+ v2 design preview at /v2/)
+      - name: Assemble site (+ archived v1 at /v1/)
         run: |
           mkdir dist
           cp -r site/* dist/
-          if [ -d site-v2 ]; then mkdir -p dist/v2 && cp -r site-v2/* dist/v2/; fi
+          if [ -d site-v1 ]; then mkdir -p dist/v1 && cp -r site-v1/* dist/v1/; fi
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

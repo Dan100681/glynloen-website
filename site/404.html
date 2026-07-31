@@ -8,25 +8,46 @@
   <link rel="icon" href="assets/favicon.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/v2.css?v=3" />
 </head>
 <body>
 
-  <section class="page-hero" style="min-height:70vh; display:flex; align-items:center;">
-    <div class="container">
-      <p class="eyebrow">404 — Page Not Found</p>
-      <h1>We couldn't find that page.</h1>
-      <p style="max-width:520px; margin:18px auto 28px; color:rgba(255,255,255,0.85);">The page you're looking for may have moved or no longer exists. Let's get you back on track.</p>
-      <a class="btn" href="index.html">Back to Home</a>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="nav-brand" href="index.html">
+        <img src="assets/lion-white.png" alt="GIC lion logo" />
+        <span class="word">GLYNLOEN<small>Insurance Consulting</small></span>
+      </a>
+      <button class="nav-burger" aria-label="Menu" onclick="document.getElementById('nl').classList.toggle('open')"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nl">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="expert-witness.html">Expert Witness</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="announcements.html">Announcements</a></li>
+        <li class="nav-cta"><a class="pill pill--solid" href="contact.html">Contact Us</a></li>
+      </ul>
     </div>
-  </section>
+  </nav>
 
-  <footer class="site-footer" style="padding:28px 0;">
-    <div class="container footer-bottom" style="border-top:0; margin-top:0; padding-top:0;">
-      © <span id="year">2026</span> Glynloen Insurance Consulting · <a href="tel:+16309405319">(630) 940-5319</a> · <a href="mailto:info@glynloen.com">info@glynloen.com</a>
+  <header class="hero" style="min-height:72vh;">
+    <div class="inner">
+      <div class="kicker">404 — Page Not Found</div>
+      <h1>We couldn't find that page.</h1>
+      <p class="sub">The page you're looking for may have moved or no longer exists. Let's get you back on track.</p>
+      <div class="actions">
+        <a class="pill pill--solid" href="index.html">Back to Home</a>
+      </div>
+    </div>
+  </header>
+
+  <footer>
+    <div class="wrap f-bottom" style="border-top:0; margin-top:0; padding-top:0;">
+      © <span id="yr">2026</span> Glynloen Insurance Consulting · <a href="tel:+16309405319">(630) 940-5319</a> · <a href="mailto:info@glynloen.com">info@glynloen.com</a>
     </div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/v2.js?v=3"></script>
 </body>
 </html>
